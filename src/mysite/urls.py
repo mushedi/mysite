@@ -19,10 +19,10 @@ from django.urls import path
 from pages.views import blog, contact, home, passwordGenerator
 
 urlpatterns = [
-    path('', home),
-    path('home', home),
+    path('', home, name='home'),
+    path('home', home, name='home'),
     path('admin/', admin.site.urls),
-    path('blog/', blog),
-    path('contact/', contact),
-    path('generator/', passwordGenerator),
+    path('blog/', blog, name='blog'),
+    path('contact/', contact, name='contact'),
+    path('generator/', passwordGenerator, name='generator'),
 ]
