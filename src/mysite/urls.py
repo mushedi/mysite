@@ -20,7 +20,7 @@ from pages.views import blog, contact, home, passwordGenerator
 
 urlpatterns = [
     path('', home, name='home'),
-    path('home', home, name='home'),
+    path('home/', home, name='home'),
     path('admin/', admin.site.urls),
     path('blog/', blog, name='blog'),
     path('contact/', contact, name='contact'),
