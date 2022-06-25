@@ -1,0 +1,93 @@
+/* <!-- 
+Azul Lanas
+Final Project
+These are the styles for the whole webpage
+--> */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+/* General Styles */
+html {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0.5em;
+    font-size: 3em;
+  }
+span.white{
+    color: white;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+}
+.links {
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 1em;
+    border-radius:  12px;
+}
+.links:hover {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+}
+.center {
+    text-align: center;
+    margin: 1.5em;
+}
+hr {
+    border-top: .8em dotted rgb(197, 193, 193);
+    width: 30%;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin: 3em auto;
+}
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    background-color: rgb(52,58,64);
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+footer a {
+    color: red;
+}
+
+@media screen and (min-width: 700px){
+    hr {
+        width: 15%;
+        border-top: 1em dotted rgb(197,193,193);
+    }
+    .item {
+        width: 70%;
+        margin: auto;
+    }
+    .mainImg {
+        width: 50%;
+    }
+    .newsItem {
+        max-width: 50%;
+    }
+    .box {
+        max-width: 70%;
+        margin: auto auto 2em auto;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .box {
+        max-width: 55%;
+    }
+}
