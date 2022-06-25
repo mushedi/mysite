@@ -1,0 +1,39 @@
+/* Home Page Styles */
+
+.main {
+    background: linear-gradient(rgb(94, 162, 189), rgb(64, 76, 153));
+
+}
+
+.homeHeader {
+    padding-top: 1em;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card1{
+    background-color: rgb(145, 186, 156);
+    max-width: 100%;
+    min-height: 300px;
+    border-top: white solid 8px;
+}
+
+.card2{
+    background-color: rgb(194, 138, 136);
+    max-width: 100%;
+    min-height: 300px;
+    border-top: white solid 8px;
+
+
+}
+
+.card3{
+    background-color: rgb(164, 134, 191);
+    max-width: 100%;
+    min-height: 300px;
+    border-top: white solid 8px;
+}
+.ideas{
+    padding-top: 2em;
+    margin: 1em;
+}
