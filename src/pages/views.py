@@ -9,11 +9,11 @@ def home(request, *args, **kwargs):
     return render(request, "home.html", context)
 
 
-def blog(request, *args, **kwargs):
-    context = {
-        'title' : 'Blog'
-    }
-    return render(request, "blog.html", context)
+# def blog(request, *args, **kwargs):
+#     context = {
+#         'title' : 'Blog'
+#     }
+#     return render(request, "blog.html", context)
 
 
 def contact(request, *args, **kwargs):
