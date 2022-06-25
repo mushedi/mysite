@@ -22,6 +22,10 @@ span.white{
     color: white;
     font-weight: 400;
 }
+button {
+    margin: auto;
+    width: 5em;
+}
 img{
     max-width: 100%;
 }
