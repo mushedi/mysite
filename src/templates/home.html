@@ -1,4 +1,37 @@
 {% extends "base.html" %}
+{% load static %}
+{% block cssLink %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
 {% block content %}
-    Home bitchessss
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 main">
+                <p class="homeHeader">
+                    <span class="white">Sollicitudin tempor</span> id eu nisl nunc mi. Vel risus commodo viverra maecenas. 
+                </p>
+                <img class="mainImg" src="../../assets/images/mainImg.png" alt="">
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 card1">
+                <p class="ideas">
+                    <span class="white">Pharetra vel turpis nunc eget lorem dolor.</span>
+                    Tellus id interdum velit laoreet. Vel fringilla est ullamcorper eget nulla.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 card2">
+                <p class="ideas">
+                    <span class="white">Pharetra vel turpis nunc eget lorem dolor.</span>
+                    Tellus id interdum velit laoreet. Vel fringilla est ullamcorper eget nulla.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 card3">
+                <p class="ideas">
+                    <span class="white">Pharetra vel turpis nunc eget lorem dolor.</span>
+                    Tellus id interdum velit laoreet. Vel fringilla est ullamcorper eget nulla.
+                </p>
+            </div>
+        </div>
+
+    </div>
 {% endblock %}
