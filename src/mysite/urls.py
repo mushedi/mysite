@@ -16,13 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from pages.views import blog, contact, home, passwordGenerator
+from pages.views import contact, home, passwordGenerator
+from blog.views import PostList, PostDetail
 
 urlpatterns = [
     path('', home, name='home'),
     path('home/', home, name='home'),
     path('admin/', admin.site.urls),
-    path('blog/', blog, name='blog'),
+    path('blog/', PostList.as_view(), name='blog'),
+    path('<slug:slug>/', PostDetail.as_view(), name='blogDetails'),
     path('contact/', contact, name='contact'),
     path('generator/', passwordGenerator, name='generator'),
 ]
