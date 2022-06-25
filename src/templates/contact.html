@@ -1,4 +1,42 @@
 {% extends "base.html" %}
+
+{% load static %}
+
+{% block cssLink %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
 {% block content %}
-    Contact bitchessss
+<h2> Contact Us</h2>
+<div id= "hiddenDiv">
+</div>
+<form method="post" id="contactForm">
+    <div class="container">
+      <div class="row">
+          <div class="col-xs-12 col-md-6 form-group">
+              <input id="fullName" name="fullName" class="form-control" type="text" placeholder="Full Name" maxlength="64"><br>
+              <input id="email" name="email" class="form-control" type="text" placeholder="Email" maxlength="64"><br>
+              <input id="reenter" name="reenter" class="form-control" type="text" placeholder="Re-Enter Email" maxlength="64"><br>
+              <input id="formSubject" name="textSubject" class="form-control" type="text" placeholder="Subject" maxlength="64"><br>
+          </div>
+          <div class="col-xs-12 col-md-6 form-group">
+              <textarea id="formMessage" name="formMessage" class="form-control" name="message" cols="30" rows="10" placeholder="Message" maxlength="100"></textarea>
+          </div>
+      </div>
+      <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-md-6 align-self-center">
+                    <button id="clear" type="button" class="btn btn-lg btn-outline-dark">
+                        Clear
+                    </button>
+                </div>
+                <div class="col-xs-12 col-md-6 align-self-center">
+                    <button id="send" type="submit button" class="btn btn-lg btn-dark">
+                        Send
+                    </button>
+                </div>
+            </div>
+      </div>
+    </div>
+</form>
 {% endblock %}
