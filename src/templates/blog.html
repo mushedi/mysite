@@ -1,4 +1,24 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block cssLink %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
 {% block content %}
-    Blog bitchessss
+    <h2>Blog</h2>
+    <hr>
+    <div class="container-fluid">
+            <div class="row news">
+            {% for post in post_list %}
+                    <div class="{special} col-sm-12 col-md-4" >
+                            <h3>{{ post.title }}</h3>
+                            <div>
+                                    {{ post.content | slice:":200" }}
+                            </div>
+                            <p class="center"><a class="links" href="{% url 'blogDetails' post.slug %}">View article</a></p>
+                    </div>
+            {% endfor %}
+            </div>
+    </div>
+    <hr>
 {% endblock %}
