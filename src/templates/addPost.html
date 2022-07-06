@@ -5,6 +5,15 @@
 <link rel="stylesheet" href="">
 {% endblock %}
 {% block content %}
-    <h1>Add Blog Post</h1>
+    <h2 class="center">Add Blog Post</h2>
+    <hr>
+    <form method="POST">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+        <button type="submit button" class="btn btn-lg btn-dark center">Post</button>
+
+
+    </form>
 
 {% endblock %}
