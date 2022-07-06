@@ -18,7 +18,7 @@
                                         {{ post.content | slice:":200" }}
                                     </p>
                             </div>
-                            <p class="center contactBtn"><a class="links" href="{% url 'blogDetails' post.slug %}">More</a></p>
+                            <p class="center contactBtn"><a class="links" href="{% url 'post_detail' post.slug %}">More</a></p>
                     </div>
             {% endfor %}
             </div>
